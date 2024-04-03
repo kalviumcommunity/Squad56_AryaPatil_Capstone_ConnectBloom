@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+// import './components/nav.css'
+import Navbar from './components/nav.jsx';
 
 function App() {
   return (
     <>
+    <Navbar/>
     <div>
-      <p>BloomConnect</p>
+      {/* <p>BloomConnect</p> */}
     </div>
     </>
   )
