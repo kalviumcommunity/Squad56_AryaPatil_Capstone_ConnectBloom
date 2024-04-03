@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+nav {
+  background-color: rgb(251, 251, 251);
+  color: #26fc05;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 100vw;
+  margin-top:-390px;
+  box-shadow: 5px 5px 5px 5px rgb(170, 170, 170);
+}
+
+.logo img {
+  height:260px;
+  width: 500px;
+  margin-left: 20px;
+}
+
+.logo{
+  height: 250px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+  
+.nav-links li {
+  margin-right: 50px;
+}
+  
+.nav-links li a {
+  color: #216d1e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: "Kadwa", serif;
+}
+  
+.nav-links li a:hover {
+  color: rgb(131, 239, 131);
+}
+
+#exploreimg{
+  height: 64vh;
+  width: 100vw;
+  filter: blur(1px);
+  transition: filter 0.3s ease;
+}
+
+
+.explore-section{
+  height: 10vh;
+}
+.explore {
+  position: absolute;
+  top: 22vw;
+  left: 45vw;
+  background: linear-gradient(45deg, #fc7405, #4adc30); 
+  color: #fff; 
+  border: 2px solid #020f00; 
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(105, 28, 28, 0.2); 
+}
+
+#exploreimg:hover + .explore {
+  opacity: 1; 
+}
+
+#img1{
+  height: 30vh;
+  border-radius: 150px;
+  margin-left:30px;
+  border: 2px solid green;
+
+}
+
