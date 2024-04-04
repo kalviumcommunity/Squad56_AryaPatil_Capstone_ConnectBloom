@@ -52,7 +52,7 @@ function UserLoginPage() {
             required
           />
         </div>
-        <button id='submitbutton' type="submit">Submit</button>
+        <button id='login-submit-button' type="submit">Submit</button>
       </form>
     </div>
     </div>

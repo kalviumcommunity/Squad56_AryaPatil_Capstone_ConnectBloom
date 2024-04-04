@@ -34,7 +34,7 @@
     width: 20vw;
   }
   
-  #submitbutton {
+  #login-submit-button {
     /* padding: 12px 20px; */
     background-color: #8df191;
     color: #070707;
@@ -47,7 +47,7 @@
     
   }
   
-  #submitbutton:hover {
+  #login-submit-button:hover {
     background-color: #0e6113;
   }
   
