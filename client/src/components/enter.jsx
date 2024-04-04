@@ -5,7 +5,10 @@ import './enter.css';
 import { useNavigate } from 'react-router-dom';
 
 function Enter() {
-const handleSellerClick = () => {
+    let navigate = useNavigate();
+
+    
+    const handleSellerClick = () => {
         navigate('/sellerhome'); 
     };
 

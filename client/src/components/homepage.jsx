@@ -1,39 +1,29 @@
 import React from "react";
-import Logo from '../assets/newlogo.png';
-import ExploreImage from '../assets/next.png';
+import ExploreImage from '../assets/backg.png';
 import './homepage.css';
+import Navbar from '../components/nav.jsx'
 
 function Homepage() {
-  return (
-    <div className="Main">
-      <nav>
-        <div className="logo">
-          <a href="#"><img src={Logo} alt="plants" /></a>
-        </div>
-        <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Cart</a></li>
-        </ul>
-      </nav>
-      <div className="explore-section">
-        <img id="exploreimg" src={ExploreImage} alt="explore" />
-        <div className="explore-overlay">
-          <button className="explore">Explore</button>
-        </div> 
-        <div className="circle">
 
-        <img id="img1" src="https://www.ugaoo.com/cdn/shop/files/DSC_3273.jpg?v=1695228127&width=550" alt="plant1" /> 
-        <img id="img1" src="https://static.wixstatic.com/media/7579c9_d05bb7dd2da6471e99495aa74fc0f145~mv2.jpg/v1/fill/w_560,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7579c9_d05bb7dd2da6471e99495aa74fc0f145~mv2.jpg" alt="plant2" />
-        <img id="img1" src="https://hips.hearstapps.com/hmg-prod/images/potted-snake-plants-inside-a-beautiful-new-flat-or-royalty-free-image-1659026388.jpg?crop=0.668xw:1.00xh;0.0799xw,0&resize=980:*" alt="palnt3" />
-        <img id="img1" src="https://media.zenfs.com/en/southern_living_806/8e554bc4b22a487677778297582e9bcd" alt="plant4" /> 
-        <img id="img1" src="https://cdn.shopify.com/s/files/1/0489/5922/6015/files/Monstera_deliciosa_480x480.jpg?v=1640258474" alt="plant5" />
-        <img id="img1" src="https://images.meesho.com/images/products/178936126/rvkxm_512.webp" alt="" />
-        </div>
+  return (
+  <div className="Main">
+     <Navbar/>
+    <img id="exploreimg" src={ExploreImage} alt="explore" />
+    <div className="circle">
+          
+        <img id="img1" src="https://png.pngtree.com/png-clipart/20220206/original/pngtree-indoor-potted-plant-vector-illustration-png-image_7262842.png" alt="plant1" /> 
+        <img id="img1" src="https://st.depositphotos.com/7844994/54493/v/450/depositphotos_544933206-stock-illustration-flower-pot-naive-style-illustration.jpg" alt="plant2" />
+        <img id="img3" src="https://png.pngtree.com/png-clipart/20210404/original/pngtree-indoor-air-purification-plant-png-image_6193564.png" alt="palnt3" />
+        <img id="img1" src="https://banner2.cleanpng.com/20230824/wep/transparent-hanging-plant-with-pot-planter-hanging-planter-cli-64e80b9a7a0303.1537945916929289224998.jpg" alt="plant4" /> 
+        <img id="img1" src="https://comfortplants.com/cdn/shop/products/1-Spider-Bonnie-4_512x512.jpg?v=1649652919" alt="plant5" />
+        <img id="img1" src="https://static3.bigstockphoto.com/5/9/3/large2/395796422.jpg" alt="plant6" />
+        <img id="img1" src="https://en.pimg.jp/062/100/053/1/62100053.jpg" alt="plant7" />
+        <img id="img1" src="https://static.vecteezy.com/system/resources/previews/000/184/638/non_2x/succulents-hand-drawn-style-vector.jpg" alt="plant8" />
+     </div>
         
-      </div>
-    </div>
+  </div>
+   
+  
   );
 }
 

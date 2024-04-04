@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+}
+.login-main {
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 550px;
+    
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-left: 155px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 40px;
+    width: 20vw;
+  }
+  
+  #submitbutton {
+    /* padding: 12px 20px; */
+    background-color: #8df191;
+    color: #070707;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10vw;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    
+  }
+  
+  #submitbutton:hover {
+    background-color: #0e6113;
+  }
+  
+  /* Style for the login heading */
+  h2#Login {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }

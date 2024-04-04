@@ -1,0 +1,39 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  /* box-sizing: border-box; */
+}
+
+.navbar{
+  background-color: rgb(160, 244, 163);
+  height: 17vh;
+  width: 1599px;
+  /* margin-bottom: 650px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.div1 {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+}
+
+.div1 li {
+  margin: 0 30px; /* Adjust spacing between nav items */
+}
+.div1 li a {
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+}
+
+.div1 a {
+  color: inherit; /* Inherits the color from parent (for React Router Link components) */
+  text-decoration: none;
+}
