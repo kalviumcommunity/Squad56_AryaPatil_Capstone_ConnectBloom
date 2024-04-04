@@ -16,10 +16,10 @@ function UserLoginPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // You can add your login logic here, such as sending the username and password to a server for authentication
+   
     console.log('Username:', username);
     console.log('Password:', password);
-    // Reset form fields
+    
     setUsername('');
     setPassword('');
   };
