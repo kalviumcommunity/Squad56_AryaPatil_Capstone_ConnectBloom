@@ -2,9 +2,14 @@ import React from "react";
 import ExploreImage from '../assets/backg.png';
 import './homepage.css';
 import Navbar from '../components/nav.jsx'
+import { useNavigate } from 'react-router-dom'; 
 
 function Homepage() {
+   const navigate = useNavigate();  // Initialize the navigate function
 
+   const handleRegisterClick = () => {
+     navigate('/register');  // Use navigate to redirect to the register route
+};
   return (
   <div className="Main">
      <Navbar/>
@@ -20,8 +25,13 @@ function Homepage() {
         <img id="img1" src="https://en.pimg.jp/062/100/053/1/62100053.jpg" alt="fruitplant" />
         <img id="img1" src="https://static.vecteezy.com/system/resources/previews/000/184/638/non_2x/succulents-hand-drawn-style-vector.jpg" alt="succulentplant" />
      </div>
+     <div className="regstdiv">
+        <p className="regline">Register to book your tour!</p>
+        <button className="regtrbtn" onClick={handleRegisterClick}>Register</button>
+      </div>
+    </div>
         
-  </div>
+
    
   
   );
