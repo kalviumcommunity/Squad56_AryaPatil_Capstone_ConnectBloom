@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Navbar from './nav';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './registrationfrom.css'
 
 function RegistrationForm() {
+  const navigate = useNavigate(); // Initialize the navigate function
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,22 +24,31 @@ function RegistrationForm() {
     e.preventDefault();
    
     console.log(formData);
-   
-    setFormData({
-      name: '',
-      email: '',
-      numberOfPeople: '',
-      preferredDate: '',
-      location: '',
-      comments: ''
-    });
+
+    // Show confirmation dialog
+    const confirmSubmit = window.confirm("Registered successfully! Click OK to go to the homepage.");
+
+    if (confirmSubmit) {
+      // After confirming, navigate to the homepage
+      navigate('/homepage');
+
+      // Reset form data
+      setFormData({
+        name: '',
+        email: '',
+        numberOfPeople: '',
+        preferredDate: '',
+        location: '',
+        comments: ''
+      });
+    }
   };
+
 
   return (
     <> 
     <Navbar/>
     <div className='forms'>
-
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
@@ -48,7 +60,7 @@ function RegistrationForm() {
           onChange={handleChange}
           required
         />
-      </div>
+           </div>
       <div>
         <label htmlFor="email">Email:</label>
         <input
