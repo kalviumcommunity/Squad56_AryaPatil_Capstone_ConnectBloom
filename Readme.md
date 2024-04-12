@@ -33,3 +33,4 @@
 BloomConnect is committed to providing a comprehensive platform for all things gardening. By offering a wide range of plants and supplies, detailed educational resources, and a community for plant lovers, we aim to inspire users to cultivate their green spaces and foster a deeper connection with nature.
 
 # Deployment link frontend: https://bloomconnect.netlify.app
+# Deployment link backend : https://squad56-aryapatil-capstone-connectbloom.onrender.com 
