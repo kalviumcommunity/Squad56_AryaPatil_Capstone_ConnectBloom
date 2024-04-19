@@ -20,7 +20,9 @@ function Navbar() {
           <Link to="/login">
             <li>Login</li>
          </Link>
-           <li><a href="#">Location</a></li>
+         <Link to="/location">
+           <li>Location</li>
+          </Link>
             <li><a href="#">Cart</a></li>
         </ul>
 

@@ -4,11 +4,11 @@ const mongoose = require("mongoose");
 const categoriesSchema = new mongoose.Schema({
     img: { type: String, required: true },
     name: { type: String, required: true },
-    benefits: { type: String, required: true },
+    benefits: { type: Array, required: true },
     category: { type: String, required: true },
 
 });
 
-const categoriesModel = mongoose.model("Categories", categoriesSchema); 
+const categoriesModel = mongoose.model("categories", categoriesSchema); 
 
 module.exports = { categoriesModel};
