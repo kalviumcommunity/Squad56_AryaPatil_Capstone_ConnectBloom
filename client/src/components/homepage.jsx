@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Homepage() {
    const navigate = useNavigate();  // Initialize the navigate function
+  //  const [activeTab, setActiveTab] = useState('Indoor');
 
    const handleRegisterClick = () => {
      navigate('/register');  // Use navigate to redirect to the register route
