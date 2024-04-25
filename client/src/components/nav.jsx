@@ -2,7 +2,7 @@
 import React from 'react';
 import './Nav.css';
 import Logo from '../assets/newlogo.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
 function Navbar() {
   return (
@@ -10,7 +10,7 @@ function Navbar() {
       <div className="navbar">
         <a href="#"><img id='logo' src={Logo} alt="Logo" /></a>
         <ul className="div1">
-          <Link to="/homepage"> 
+          <Link to="/"> 
              <li>Home</li>
           </Link>
           <Link to="/login">
