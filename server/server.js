@@ -1,18 +1,17 @@
 const express = require('express');
 const connectToDB = require('./Config/db');
-const { categoriesModel } = require('./Model/user.js'); // Import the categoriesModel
-const cors = require("cors")
-
+const cors = require("cors");
+const { categoriesModel,Sale } = require ("./Model/user");
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 // Database Connection
 connectToDB();
 
-//Routes
+// Routes
 app.get('/ping', (req, res) => {
   res.send('pong');
 });
@@ -20,11 +19,24 @@ app.get('/ping', (req, res) => {
 // Route to fetch categories data
 app.get('/api/categories', async (req, res) => {
   try {
-    const categories = await categoriesModel.find({});
-    res.send(categories);
+    let data = await categoriesModel.find({});
+    res.send(data);
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Server Error' });
+    console.error('Error fetching categories:', error);
+    res.status(500).send('Server Error');
+  }
+});
+
+// Route to add a new category
+app.post('/api/sale', async (req, res) => {
+  try {
+    const { image, name, benefits, category, location, price } = req.body;
+    const newSale = new categoriesModel({ image, name, benefits, category, location, price });
+    await newSale.save();
+    res.status(201).send('Sale added successfully');
+  } catch (error) {
+    console.error('Error adding sale:', error);
+    res.status(500).send('Server Error');
   }
 });
 

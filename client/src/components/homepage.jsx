@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import ExploreImage from '../assets/backg.png';
 import './homepage.css';
-import Navbar from '../components/nav.jsx'
+import Navbar from './Nav.jsx'
 import { useNavigate } from 'react-router-dom'; 
-
+import axios from 'axios'
 function Homepage() {
+  
    const navigate = useNavigate();  // Initialize the navigate function
-  //  const [activeTab, setActiveTab] = useState('Indoor');
-
-   const handleRegisterClick = () => {
-     navigate('/register');  // Use navigate to redirect to the register route
-};
+   const selectedLocation = localStorage.getItem('selectedLocation') || 'No location selected';
+   const [categories, setCategories] = useState([]); // State variable to store categories
+   
+     useEffect(() => {
+      axios.get(`http://localhost:3000/api/categories`)
+        .then((res) => {
+          setCategories(res.data);
+        })
+        .catch((error) => {
+          console.error('Error fetching categories:', error);
+        });
+    }, []);  
+      // Function to handle redirection to the Sale page
+  const handleSaleClick = () => {
+    navigate('/sale');
+  };
+ 
   return (
   <div className="Main">
      <Navbar/>
@@ -26,16 +39,22 @@ function Homepage() {
         <img id="img1" src="https://en.pimg.jp/062/100/053/1/62100053.jpg" alt="fruitplant" />
         <img id="img1" src="https://static.vecteezy.com/system/resources/previews/000/184/638/non_2x/succulents-hand-drawn-style-vector.jpg" alt="succulentplant" />
      </div>
-     <div className="regstdiv">
-        <p className="regline">Register to book your tour!</p>
-        <button className="regtrbtn" onClick={handleRegisterClick}>Register</button>
-      </div>
+     <h2>Location: {selectedLocation}</h2> 
+     <ul className="imagesgird">
+        {categories.map((category, index) => ( 
+          <ul  className="imagecard">
+          <img className="apiimgs" src={category.image} alt=""  />
+          <li key={index}>{category.name}</li>  
+          <li key={index}>{category.benefits}</li>  
+          <li key={index}>{category.category}</li>  
+          <li key={index}>{category.location}</li>  
+          </ul>
+        ))}
+      </ul>
     </div>
         
-
    
   
   );
 }
-
 export default Homepage;

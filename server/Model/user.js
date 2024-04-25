@@ -6,9 +6,14 @@ const categoriesSchema = new mongoose.Schema({
     name: { type: String, required: true },
     benefits: { type: Array, required: true },
     category: { type: String, required: true },
+    location:{type:String , required:true},
+    price:{type:Number, required:true}
 
-});
+}); 
 
-const categoriesModel = mongoose.model("Categories", categoriesSchema); 
 
-module.exports = { categoriesModel};
+
+const categoriesModel = mongoose.model("categories", categoriesSchema);  
+
+
+module.exports = { categoriesModel };  

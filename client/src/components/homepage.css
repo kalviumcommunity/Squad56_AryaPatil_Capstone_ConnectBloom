@@ -28,29 +28,27 @@
   margin-top: 20px;
 }
 
-.regstdiv{
-  background-color: rgb(182, 231, 108);
-  margin-top: 50px;
+.imagesgird{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* margin-left: 150px;  */
+  align-items: center;
+
+
+}  
+
+.apiimgs{
+  height: 30vh;
+margin-left: 150px;
+width: 10vw;
+  /* align-items: center; */
 }
 
-.regline{
-  font-size: 1.5rem;
-  font-weight: bolder;
-  color: rgb(0, 129, 0);
-  text-align: center;
-  padding-top: 20px;
-
+.imagecard{
+  border: 2px solid;
+  margin: 20px 20px 20px 20px;
+  border-radius: 15px;
 }
 
-.regtrbtn {
-  margin-left: 740px;
-  margin-top: 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease; 
-}
 
-.regtrbtn:hover {
-  background-color: green; 
-  color: white;
-}
+
