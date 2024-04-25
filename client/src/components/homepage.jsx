@@ -4,13 +4,11 @@ import './homepage.css';
 import Navbar from './Nav.jsx'
 import { useNavigate } from 'react-router-dom'; 
 import axios from 'axios'
-
 function Homepage() {
   
    const navigate = useNavigate();  // Initialize the navigate function
    const selectedLocation = localStorage.getItem('selectedLocation') || 'No location selected';
    const [categories, setCategories] = useState([]); // State variable to store categories
-
    
      useEffect(() => {
       axios.get(`http://localhost:3000/api/categories`)
@@ -21,7 +19,6 @@ function Homepage() {
           console.error('Error fetching categories:', error);
         });
     }, []);  
-
       // Function to handle redirection to the Sale page
   const handleSaleClick = () => {
     navigate('/sale');
@@ -52,15 +49,12 @@ function Homepage() {
           <li key={index}>{category.category}</li>  
           <li key={index}>{category.location}</li>  
           </ul>
-
         ))}
       </ul>
     </div>
         
-
    
   
   );
 }
-
 export default Homepage;
