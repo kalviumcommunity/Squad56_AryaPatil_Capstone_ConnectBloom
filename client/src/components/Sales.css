@@ -1,0 +1,13 @@
+#inpform{
+    margin-top: 200px; 
+    margin-left: 450px;
+    /* align-items: center; */
+}
+#texttosell{
+    margin-left: 150px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+#salebutton{
+    margin-left: 400px;
+}
