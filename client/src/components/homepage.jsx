@@ -57,7 +57,7 @@ import 'slick-carousel/slick/slick-theme.css';
         </div>
           <img className="exploreimg"src={Image22} alt="Image22" />
           <img className="exploreimg" src={Hands} alt="Hands" />
-        {/* Add more images here if needed */}
+       
       </Slider>
     <div className="circle">
           
