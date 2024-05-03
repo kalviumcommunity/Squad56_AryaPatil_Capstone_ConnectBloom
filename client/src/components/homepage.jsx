@@ -1,29 +1,41 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import Navbar from './Nav.jsx';
+import './homepage.css';
 import ExploreImage from '../assets/backg.png';
 import Image22 from '../assets/iamge22.png';
 import Hands from '../assets/hands.png';
-import './homepage.css';
-import Navbar from './Nav.jsx'
 import { useNavigate } from 'react-router-dom'; 
-import axios from 'axios'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-function Homepage() {
-  
-   const navigate = useNavigate();  // Initialize the navigate function
-   const selectedLocation = localStorage.getItem('selectedLocation') || 'No location selected';
-   const [categories, setCategories] = useState([]); // State variable to store categories
+
+
    
-     useEffect(() => {
-      axios.get(`http://localhost:3000/api/categories`)
-        .then((res) => {
-          setCategories(res.data);
-        })
-        .catch((error) => {
-          console.error('Error fetching categories:', error);
-        });
-    }, []);  
+   
+   function Homepage() {
+       const navigate = useNavigate();
+       const [categories, setCategories] = useState([]);
+       const [selectedLocation, setSelectedLocation] = useState(localStorage.getItem('selectedLocation') || 'No location selected');
+   
+       useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // const token = localStorage.getItem('accessToken'); // Get token from localStorage
+                const response = await axios.get(`http://localhost:3000/api/categories`, {
+                    // headers: {
+                    //     Authorization: `Bearer ${token}` // Include token in the request headers
+                    // },
+                    params: { location: selectedLocation !== 'No location selected' ? selectedLocation : undefined }
+                });
+                setCategories(response.data);
+            } catch (error) {
+                console.error('Error fetching categories:', error);
+            }
+        };
+        fetchData();
+    }, [selectedLocation]);
+    
       // Function to handle redirection to the Sale page
   const handleSaleClick = () => {
     navigate('/sale');
@@ -38,7 +50,7 @@ function Homepage() {
  
   return (
   <div className="Main">
-     <Navbar/>
+     <Navbar selectedLocation={selectedLocation} onLocationChange={setSelectedLocation} />
      <Slider {...settings}>
         <div>
           <img className="exploreimg" src={ExploreImage} alt="explore" />
