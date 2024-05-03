@@ -1,0 +1,57 @@
+.paragraph{
+    margin-top: 180px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.addtocart{
+    display: flex;
+    margin-left: 490px;
+    margin-top: 150px;
+    border: 2px solid black;
+    width: 50vw;
+}
+
+#nameofplant{
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+#imageofcart{
+    height: 27vh;
+}
+
+#quantity{
+    font-size: 1rem;
+    position: absolute;
+    top:33vw;
+    left:53vw;
+}
+
+.shoopingcart{
+    margin-top: 40px;
+}
+#addbutton{
+    position: absolute;
+    top:35vw;
+    left:53vw;
+    width: 7vw;
+    /* display: flex; */
+}
+#removebutton{
+    position: absolute;
+    top:35vw;
+    left:60vw;
+    width: 7vw;
+    padding-left: 20px;
+
+}
+
+.buttonsforcart{
+  padding-left: 20px;
+}
+
+.cartbuttonsclass{
+    display: flex;
+    justify-content: space-around;
+}
