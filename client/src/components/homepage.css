@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
 }
-
-#exploreimg {
+.exploreimg {
   height: 64vh;
   width: 99.8vw;
+  margin-top: 150px;
 
  
 }
@@ -15,7 +15,7 @@
   border-radius: 200px;
   margin-left:40px;
   border: 2px solid green;
-  margin-top: 20px;
+  margin-top: 60px;
 
 }
 
@@ -25,7 +25,7 @@
   border-radius: 200px;
   margin-left:40px;
   border: 2px solid green;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .imagesgird{
@@ -41,14 +41,18 @@
   height: 30vh;
 margin-left: 150px;
 width: 10vw;
-  /* align-items: center; */
+align-items: center;
 }
 
 .imagecard{
   border: 2px solid;
   margin: 20px 20px 20px 20px;
-  border-radius: 15px;
+  border-radius: 15px; 
+  
+
 }
 
 
-
+.name{
+ margin-left: 50px;
+}

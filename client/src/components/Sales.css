@@ -1,13 +1,52 @@
-#inpform{
-    margin-top: 200px; 
-    margin-left: 450px;
-    /* align-items: center; */
-}
-#texttosell{
-    margin-left: 150px;
-    margin-bottom: 50px;
-    font-size: 2rem;
-}
-#salebutton{
-    margin-left: 400px;
-}
+/* Sales.css */
+
+#inpform {
+    margin-top: 150px; /* Adjusted margin for better alignment */
+    margin-left:580px; /* Center the form horizontally */
+    margin-right: auto; /* Center the form horizontally */
+    max-width: 400px; /* Limit the width of the form for better readability */
+    padding: 20px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 8px; /* Add border radius for rounded corners */
+  }
+  
+  #texttosell {
+    margin-bottom: 20px; /* Reduced bottom margin for better spacing */
+    font-size: 1.5rem; /* Slightly reduced font size for better readability */
+    text-align: center; /* Center align the text */
+  }
+  
+  #inpform div {
+    margin-bottom: 20px; /* Add some space between input fields */
+  }
+  
+  #inpform label {
+    display: block; /* Display labels as block elements for better spacing */
+    margin-bottom: 5px; /* Add some space below labels */
+  }
+  
+  #inpform input {
+    width: 20vw; /* Make input fields fill their container */
+    padding: 8px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add a border for input fields */
+    border-radius: 4px; /* Add border radius for rounded corners */
+  }
+  
+  #inpform button {
+    width: 100%; /* Make the button fill its container */
+    padding: 10px; /* Add padding for better appearance */
+    background-color: #007bff; /* Set a background color */
+    color: #fff; /* Set text color to white */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Add smooth transition */
+  }
+  
+  #inpform button:hover {
+    background-color: #0056b3; /* Darken the background color on hover */
+  }
+  
+  /* #image{
+    width: 20vw;
+  } */

@@ -1,3 +1,4 @@
+// Location.jsx
 import React, { useState } from 'react';
 import './locationpage.css';
 import Navbar from './Nav.jsx';
@@ -13,8 +14,8 @@ function Location() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const selectedLocation = location ? location : "No location selected";
-    navigate(`/categories/${selectedLocation.toLowerCase()}`);
+    localStorage.setItem('selectedLocation', location); // Store selected location in localStorage
+    navigate(`/categories/${location.toLowerCase()}`); // Navigate to categories page with selected location
   };
 
   return (
