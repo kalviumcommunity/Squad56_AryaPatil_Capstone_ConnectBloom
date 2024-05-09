@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
 import './userlogin.css';
 import Navbar from './Nav.jsx';
-import axios from 'axios'
+import axios from 'axios';
 import { Navigate, useNavigate } from 'react-router-dom';
+
 function UserLoginPage({ onClose, setIsLoggedIn }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate()
+    // const [isLoggedIn, setLoggedIn] = useState(false); // State to manage login status
+    const navigate = useNavigate();
+
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
     };
+
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -23,6 +28,7 @@ function UserLoginPage({ onClose, setIsLoggedIn }) {
     
             const response = await axios.post("http://localhost:3000/api/login", loginData);
             console.log(response);
+            setLoggedIn(true); // Update login state
             navigate("/");
         } catch (error) {
             if (error.response) {
@@ -39,12 +45,12 @@ function UserLoginPage({ onClose, setIsLoggedIn }) {
     };
     
     const handleClose = () => {
-        // Close the modal without submitting
         onClose();
     };
+
     return (
         <div className="modal-background">
-            <Navbar />
+            <Navbar/> 
             <div className='login-modal'>
                 <button className="close-button" onClick={handleClose}>X</button>
                 <h2 id='Login'>Login</h2>
@@ -77,4 +83,5 @@ function UserLoginPage({ onClose, setIsLoggedIn }) {
         </div>
     );
 }
+
 export default UserLoginPage;

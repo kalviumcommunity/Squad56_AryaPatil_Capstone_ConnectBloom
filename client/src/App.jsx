@@ -9,7 +9,7 @@ import Signup from './components/Signup.jsx';
 
 
 function App() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track user login status
+    // const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track user login status
 
     return (
         <Router>
