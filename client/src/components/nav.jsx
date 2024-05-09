@@ -17,6 +17,9 @@ function Navbar({ selectedLocation, onLocationChange }) {
                    
                     <Link to="/login">
                         <li>Login</li>
+                    </Link> 
+                    <Link to="/signup">
+                        <li>Sign Up</li>
                     </Link>
                    
                     <li className="dropdown">

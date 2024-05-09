@@ -4,7 +4,8 @@ import Sale from './components/Sale.jsx';
 import Homepage from './components/Homepage.jsx';
 import UserLoginPage from './components/Userloginpage.jsx';
 import Navbar from './components/Nav.jsx'; 
-import Cart from './components/Cartpage.jsx'
+import Cart from './components/Cartpage.jsx';
+import Signup from './components/Signup.jsx';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/login" element={<UserLoginPage onClose={() => { }} setIsLoggedIn={setIsLoggedIn} />} />
                     <Route path="/sale" element={<Sale />} />
                     <Route path='/cart' element={<Cart/>}/>
+                    <Route path='/signup' element={<Signup/>}></Route>
                 </Routes>
             </div>
         </Router>

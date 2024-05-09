@@ -1,51 +1,47 @@
 import React, { useState } from 'react';
 import './userlogin.css';
 import Navbar from './Nav.jsx';
-
+import axios from 'axios'
+import { Navigate, useNavigate } from 'react-router-dom';
 function UserLoginPage({ onClose, setIsLoggedIn }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-
+    const navigate = useNavigate()
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
     };
-
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
-
     const handleSubmit = async (event) => {
         event.preventDefault();
-
         try {
-            const response = await fetch('http://localhost:3000/api/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ username, password })
-            });
-
-            if (response.ok) {
-                const data = await response.json();
-                // Update login status in App component
-                setIsLoggedIn(true);
-                console.log(data.message);
-                onClose();
-            } else {
-                const errorData = await response.json();
-                console.error(errorData.message);
-            }
+            const loginData = {
+                username,
+                password
+            };
+    
+            const response = await axios.post("http://localhost:3000/api/login", loginData);
+            console.log(response);
+            navigate("/");
         } catch (error) {
-            console.error('Error:', error);
+            if (error.response) {
+                alert("User not found. Please create an account");
+                console.log(error.response.data);
+                console.log(error.response.status);
+                console.log(error.response.headers);
+            } else if (error.request) {
+                console.log(error.request);
+            } else {
+                console.log('Error:', error.message);
+            }
         }
     };
-
+    
     const handleClose = () => {
         // Close the modal without submitting
         onClose();
     };
-
     return (
         <div className="modal-background">
             <Navbar />
@@ -81,5 +77,4 @@ function UserLoginPage({ onClose, setIsLoggedIn }) {
         </div>
     );
 }
-
 export default UserLoginPage;
