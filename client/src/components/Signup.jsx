@@ -53,7 +53,7 @@ function Signup() {
                 alert('An error occurred while signing up. Please try again.');
             }
         }
-    };
+    }; 
     
     
         // try {
