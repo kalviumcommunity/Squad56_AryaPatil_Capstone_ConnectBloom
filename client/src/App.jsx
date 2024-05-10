@@ -3,20 +3,25 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sale from './components/Sale.jsx';
 import Homepage from './components/Homepage.jsx';
 import UserLoginPage from './components/Userloginpage.jsx';
-import Navbar from './components/Nav.jsx'; // Import Navbar to display login/logout status
+import Navbar from './components/Nav.jsx'; 
+import Cart from './components/Cartpage.jsx';
+import Signup from './components/Signup.jsx';
+
 
 function App() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track user login status
+    // const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track user login status
 
     return (
         <Router>
             <div>
-                {/* Pass isLoggedIn state and handleLogout function to Navbar */}
-                <Navbar isLoggedIn={isLoggedIn} />
+                
+                <Navbar />
                 <Routes>
                     <Route path="/" element={<Homepage />} />
-                    <Route path="/login" element={<UserLoginPage onClose={() => { }} setIsLoggedIn={setIsLoggedIn} />} />
+                    <Route path="/login" element={<UserLoginPage/>} />
                     <Route path="/sale" element={<Sale />} />
+                    <Route path='/cart' element={<Cart/>}/>
+                    <Route path='/signup' element={<Signup/>}></Route>
                 </Routes>
             </div>
         </Router>
