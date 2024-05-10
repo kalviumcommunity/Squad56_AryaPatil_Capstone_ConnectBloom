@@ -38,7 +38,7 @@ app.get('/api/categories', async (req, res) => {
 // Sign up endpoint with input validation and error handling
 app.post('/signup', async (req, res) => {
   const data = req.body;
-
+  console.log(data)
   // Input validation
   if (!data.name || !data.email || !data.password) {
     return res.status(400).send('Name, email, and password are required');
@@ -51,12 +51,15 @@ app.post('/signup', async (req, res) => {
     }
     const saltRounds = 10;
     const hashPassword = await bcrypt.hash(data.password, saltRounds);
-    const newUser = new userModel({
-      name: data.name,
+    // const newUser = new userModel({
+    //   name: data.name,
+    //   email: data.email,
+    //   password: hashPassword,
+    // });
+    // await newUser.save();
+    await userModel.create({name: data.name,
       email: data.email,
-      password: hashPassword,
-    });
-    await newUser.save();
+      password: data.password,})
     res.send("Signed In");
   } catch (error) {
     res.status(500).send("Error while signing up: " + error.message);

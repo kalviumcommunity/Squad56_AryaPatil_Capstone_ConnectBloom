@@ -15,10 +15,10 @@ function App() {
         <Router>
             <div>
                 
-                <Navbar isLoggedIn={isLoggedIn} />
+                <Navbar />
                 <Routes>
                     <Route path="/" element={<Homepage />} />
-                    <Route path="/login" element={<UserLoginPage onClose={() => { }} setIsLoggedIn={setIsLoggedIn} />} />
+                    <Route path="/login" element={<UserLoginPage/>} />
                     <Route path="/sale" element={<Sale />} />
                     <Route path='/cart' element={<Cart/>}/>
                     <Route path='/signup' element={<Signup/>}></Route>
