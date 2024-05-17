@@ -23,26 +23,30 @@ function UserLoginPage({ onClose }) {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const loginData = {
-                username,
-                password
-            };
-            console.log(password);
-            const response = await axios.post("http://localhost:3000/api/login", loginData)
-            .then((res)=>{
-                console.log(res.data)
-                alert(res.data)
-                navigate("/");
-            }).catch((err)=>{
-                console.log(err)
-            })
-        
-            
+          const loginData = {
+            username,
+            password
+          };
+    
+          const response = await axios.post('http://localhost:3000/api/login', loginData);
+          if (response.data) {
+            localStorage.setItem('token', response.data.token);
+            console.log(response.data);
+            alert('You logged in successfully!');
+            navigate('/');
+          }
         } catch (error) {
-            setLoginError(true); // Set login error state to true if authentication fails
-            console.log('Error:', error.message);
+          console.error('Login error:', error);
+          if (error.response && error.response.status === 404) {
+            alert('User not found, please create an account');
+          } else if (error.response && error.response.status === 401) {
+            alert('Incorrect password');
+          } else {
+            alert('An error occurred during login');
+          }
         }
-    };
+      };
+    
     
     const handleClose = () => {
         onClose();

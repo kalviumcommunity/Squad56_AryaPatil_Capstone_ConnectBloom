@@ -73,13 +73,13 @@ import 'slick-carousel/slick/slick-theme.css';
      <h2>Location: {selectedLocation}</h2> 
      <ul className="imagesgird">
         {categories.map((category, index) => ( 
-          <ul  className="imagecard">
+          <ul key={index} className="imagecard">
           <img className="apiimgs" src={category.image} alt=""  />
-          <p className="name" key={index}>{category.name}</p>  
-          <p className="name" key={index}>{category.benefits}</p>  
-          <p className="name" key={index}>{category.category}</p>  
-          <p className="name" key={index}>{category.location}</p>  
-          <p className="name" key={index}>{category.price}</p>  
+          <p className="name" >{category.name}</p>  
+          <p className="name" >{category.benefits}</p>  
+          <p className="name" >{category.category}</p>  
+          <p className="name" >{category.location}</p>  
+          <p className="name" >{category.price}</p>  
           </ul>
         ))}
       </ul>
