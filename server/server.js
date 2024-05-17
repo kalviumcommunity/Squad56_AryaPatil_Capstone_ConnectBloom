@@ -3,10 +3,14 @@ const connectToDB = require('./Config/db');
 const cors = require('cors');
 const { categoriesModel, userModel } = require('./Model/user');
 const app = express();
-const port = process.env.PORT || 3000; 
+// const port = process.env.PORT || 3000; 
 const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs'); 
 const jwt = require('jsonwebtoken');
+require('dotenv').config();   
+
+const port = process.env.PORT || 3000;
+const saltRounds = parseInt(process.env.SALT_ROUNDS, 10);
 
 app.use(express.json());
 app.use(cors());
