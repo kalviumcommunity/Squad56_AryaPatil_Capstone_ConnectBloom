@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from './Nav';
 import "../components/Sales.css";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Sale() {
  
@@ -12,10 +13,11 @@ function Sale() {
   const [category, setCategory] = useState('');
   const [location, setLocation] = useState('');
   const [price, setPrice] = useState('');
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/api/sale', {
+    axios.post('http://localhost:3000/sale', {
       image,
       name,
       benefits,
@@ -25,7 +27,7 @@ function Sale() {
     })
     .then((response) => {
       console.log(response.data);
-      history.push('/');
+      navigate('/')
     })
     .catch((error) => {
       console.error('Error submitting sale data:', error);

@@ -97,6 +97,18 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
+app.post('/sale', async (req, res) => {
+  const data = req.body;
+  try {
+    const newSale = new categoriesModel(data);
+    await newSale.save();
+    res.status(201).send(newSale);
+  } catch (error) {
+    console.error('Error adding sale:', error);
+    res.status(500).send('Server Error');
+  }
+});
+
 // Start server
 app.listen(port, () => {
   console.log(`Server running on PORT: ${port}`);
