@@ -28,7 +28,7 @@ function UserLoginPage({ onClose }) {
             password
           };
     
-          const response = await axios.post('http://localhost:3000/api/login', loginData);
+          const response = await axios.post('https://squad56-aryapatil-capstone-connectbloom.onrender.com/api/login', loginData);
           if (response.data) {
             localStorage.setItem('token', response.data.token);
             console.log(response.data);

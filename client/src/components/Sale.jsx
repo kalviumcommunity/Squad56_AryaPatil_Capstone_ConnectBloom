@@ -17,7 +17,7 @@ function Sale() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/sale', {
+    axios.post('https://squad56-aryapatil-capstone-connectbloom.onrender.com/sale', {
       image,
       name,
       benefits,

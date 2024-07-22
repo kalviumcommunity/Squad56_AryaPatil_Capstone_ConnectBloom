@@ -43,7 +43,7 @@ function Signup() {
             };
             try {
                 const response = await axios.post(
-                    `http://localhost:3000/signup`,
+                    `https://squad56-aryapatil-capstone-connectbloom.onrender.com/signup`,
                     userData
                 );
                 alert(response.data);
