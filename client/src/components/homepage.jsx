@@ -19,7 +19,7 @@ function Homepage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://bloomconnect-8dnty406g-arya-patils-projects.vercel.app/api/categories`, {
+                const response = await axios.get(` https://squad56-aryapatil-capstone-connectbloom.onrender.com/api/categories`, {
                     params: { location: selectedLocation !== 'No location selected' ? selectedLocation : undefined }
                 });
                 setCategories(response.data);
