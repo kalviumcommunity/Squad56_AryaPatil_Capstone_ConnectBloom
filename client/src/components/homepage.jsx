@@ -19,7 +19,7 @@ function Homepage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/categories`, {
+                const response = await axios.get(`https://bloomconnect-8dnty406g-arya-patils-projects.vercel.app/api/categories`, {
                     params: { location: selectedLocation !== 'No location selected' ? selectedLocation : undefined }
                 });
                 setCategories(response.data);
