@@ -68,8 +68,8 @@ align-items: center;
 #footertext{
   margin-left: 650px;
   padding-top: 10px;
-  color: rgb(0, 0, 0);
-  font-size: 1.2rem;
+  color: rgb(34, 34, 34);
+  font-size: 1.1rem;
 } 
 
 .footer:hover {
