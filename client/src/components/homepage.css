@@ -56,3 +56,22 @@ align-items: center;
 .name{
  margin-left: 50px;
 }
+
+.footer{
+  background-color: rgb(71, 117, 2);
+  height: 5vh;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+
+} 
+
+#footertext{
+  margin-left: 650px;
+  padding-top: 10px;
+  color: rgb(34, 34, 34);
+  font-size: 1.1rem;
+} 
+
+.footer:hover {
+  background-color: rgb(99, 169, 1);
+}

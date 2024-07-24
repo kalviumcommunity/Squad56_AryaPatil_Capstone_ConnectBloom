@@ -22,11 +22,13 @@ const categoriesModel = mongoose.model("categories", categoriesSchema);
 
 
 const userSchema = new mongoose.Schema({
-  username: { type: String, required: true, unique: true },
-  password: { type: String, required: true }
+  name: { type: String, required: true },
+  email: { type: String, required: true , unique: true},
+  password:{type:String, required:true}
+
 });
 
-const User = mongoose.model('User', userSchema);
+const userModel = mongoose.model('users', userSchema);
 
 
-module.exports = { categoriesModel , User}; 
+module.exports = { categoriesModel , userModel}; 
