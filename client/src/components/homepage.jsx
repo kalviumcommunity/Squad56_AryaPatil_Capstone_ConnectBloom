@@ -1,25 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import axios from 'axios';
 import Navbar from './Nav.jsx';
 import './homepage.css';
 import ExploreImage from '../assets/backg.png';
 import Image22 from '../assets/iamge22.png';
 import Hands from '../assets/hands.png';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { FavoritesContext } from '../context/FavoritesContext.jsx';
 
 function Homepage() {
     const navigate = useNavigate();
     const [categories, setCategories] = useState([]);
     const [selectedLocation, setSelectedLocation] = useState(localStorage.getItem('selectedLocation') || 'No location selected');
     const [cart, setCart] = useState([]);
+    const { favorites, addToFavorites } = useContext(FavoritesContext);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(` https://squad56-aryapatil-capstone-connectbloom.onrender.com/api/categories`, {
+                const response = await axios.get(`https://squad56-aryapatil-capstone-connectbloom.onrender.com/api/categories`, {
                     params: { location: selectedLocation !== 'No location selected' ? selectedLocation : undefined }
                 });
                 setCategories(response.data);
@@ -35,6 +37,11 @@ function Homepage() {
         console.log(`${category.name} added to cart`);
     };
 
+    const handleAddToFavorites = (category) => {
+        addToFavorites(category);
+        console.log(`${category.name} added to favorites`);
+    };
+
     const settings = {
         dots: true,
         infinite: true,
@@ -44,13 +51,13 @@ function Homepage() {
     };
 
     return (
-        <div className="Main">
-            <Navbar selectedLocation={selectedLocation} onLocationChange={setSelectedLocation} cart={cart} />
+        <div >
+        <Navbar selectedLocation={selectedLocation} onLocationChange={setSelectedLocation} cart={cart} />
             <Slider {...settings}>
                 <div>
                     <img className="exploreimg" src={ExploreImage} alt="explore" />
                 </div>
-                <img className="exploreimg" src={Image22} alt="Image22" />
+                <img  className="exploreimg" src={Image22} alt="Image22" />
                 <img className="exploreimg" src={Hands} alt="Hands" />
             </Slider>
             <div className="circle">
@@ -63,20 +70,27 @@ function Homepage() {
                 <img id="img1" src="https://hips.hearstapps.com/hmg-prod/images/string-of-pearls-plant-royalty-free-image-1680642095.jpg?crop=0.668xw:1.00xh;0.0913xw,0&resize=1200:*" alt="fruitplant" />
                 <img id="img1" src="https://m.media-amazon.com/images/I/813XSKGT-bL.jpg" alt="succulentplant" />
             </div>
-            <h2>Location: {selectedLocation}</h2> 
+            <h2>Location: {selectedLocation}</h2>
+            <div className="displayed-div">
             <ul className="imagesgird">
+                
                 {categories.map((category, index) => (
                     <ul key={index} className="imagecard">
                         <img className="apiimgs" src={category.image} alt={category.name} />
-                        <p className="name">{category.name}</p>
-                        <p className="name">{category.benefits}</p>
-                        <p className="name">{category.category}</p>
-                        <p className="name">{category.location}</p>
-                        <p className="name">{category.price}</p>
-                        <button onClick={() => handleAddToCart(category)}>Add to Cart</button>
+                        <p className="name"><b>Name: </b> {category.name}</p>
+                        <ul>
+                        <b>Benefits: </b>{category.benefits.map((benefit, i) => (
+                                <li key={i}>{benefit}</li>
+                            ))}
+                        </ul>
+                        <p className="name"><b>Type: </b> {category.category}</p>
+                        <p className="name"><b>City: </b> {category.location}</p>
+                        <p className="name"><b>Price: </b> {category.price}</p>
+                        <button className="favbutton" onClick={() => handleAddToFavorites(category)}>Fav</button>
                     </ul>
                 ))}
             </ul>
+                </div>
             <footer className="footer">
                 <p id="footertext">@2024 ,BloomConnect.All rights reserved</p>
             </footer>

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import './Nav.css';
 import Logo from '../assets/newlogo.png';
+import { FavoritesContext } from '../context/FavoritesContext';
 
-function Navbar({ selectedLocation, onLocationChange }) {
-   
+function Navbar({ selectedLocation, onLocationChange ,cart}) {
+    const { favorites } = useContext(FavoritesContext);
 
     return (
         <div className="Main">
@@ -34,9 +35,7 @@ function Navbar({ selectedLocation, onLocationChange }) {
                             </select>
                         </div>
                     </li>
-                   <li> <Link to={"/cart"}> 
-                        Cart
-                    </Link></li>
+                   <li>   <Link to="/fav">Favorites ({favorites.length})</Link></li>
                 
                     <Link to={"/sale"}>
                         <li>Sell+</li>
