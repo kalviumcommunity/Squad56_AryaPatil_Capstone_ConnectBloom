@@ -4,8 +4,9 @@ import Sale from './components/Sale.jsx';
 import Homepage from './components/Homepage.jsx';
 import UserLoginPage from './components/Userloginpage.jsx';
 import Navbar from './components/Nav.jsx'; 
-import Cartpage from './components/Cartpage.jsx';
+import Favpage from './components/favpage.jsx';
 import Signup from './components/Signup.jsx';
+import { FavoritesProvider } from './context/FavoritesContext.jsx';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     const [cart, setCart] = useState([]);
 
     return (
+        <FavoritesProvider>
         <Router>
             <div>
                 
@@ -24,10 +26,11 @@ function App() {
                     {/* <Route path='/cart' element={<Cart/>}/> */}
                     <Route path='/signup' element={<Signup/>}></Route>
                     <Route path="/" element={<Homepage cart={cart} setCart={setCart} />} />
-                    <Route path="/cart" element={<Cartpage cart={cart} />} />
+                    <Route path="/fav" element={<Favpage />} />
                 </Routes>
             </div>
         </Router>
+        </FavoritesProvider>
     );
 }
 
