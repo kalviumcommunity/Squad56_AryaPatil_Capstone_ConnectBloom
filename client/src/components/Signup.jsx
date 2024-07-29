@@ -56,38 +56,17 @@ function Signup() {
     }; 
     
     
-        // try {
-        //   // Make a POST request to your signup endpoint
-        //   const response = await fetch('http://localhost:3000/api/signup', {
-        //     method: 'POST',
-        //     headers: {
-        //       'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify({ name, email, password })
-        //   });
-    
-    //       if (response.ok) {
-    //         // Signup successful
-    //         console.log('Signup successful');
-    //         // Redirect the user to login page or perform any other action
-    //       } else {
-    //         // Signup failed
-    //         const errorData = await response.json();
-    //         console.error(errorData.message);
-    //       }
-    //     } catch (error) {
-    //       console.error('Error:', error);
-    //     }
-      // };
-    
+       
   return (
-    <div> 
+    <>
+   
         <Navbar/>
+    <div className='main-sign'> 
         <div className='signupdiv'> 
 
         <h2 id='headingsign'>Sign Up  Page</h2>
     <form onSubmit={handleSubmit}>
-      <div className='namediv' >
+      <div   className='namediv inpp' >
         <label id='namesign' htmlFor="name">Name</label>
         <input
           type="text"
@@ -97,7 +76,7 @@ function Signup() {
           required
         />
       </div>
-      <div   className='emaildiv' >
+      <div    className='emaildiv inpp' >
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -107,21 +86,21 @@ function Signup() {
           required
         />
       </div>
-      <div className='passworddiv'>
+      <div  className='passworddiv inpp'>
         <label htmlFor="password">Password</label>
         <input
           type="password"
-          id="password"
+          // id="password"
           value={password}
           onChange={handlePasswordChange}
           required
         />
       </div>
-      <div className='confirmpassworddiv'>
+      <div  className='confirmpassworddiv inpp'>
         <label htmlFor="confirmPassword">Confirm Password</label>
         <input
           type="password"
-          id="confirmPassword"
+          // id="confirmPassword"
           value={confirmPassword}
           onChange={handleConfirmPasswordChange}
           required
@@ -131,6 +110,7 @@ function Signup() {
     </form>
         </div>
     </div>
+    </>
   )
 }
 
