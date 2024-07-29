@@ -1,13 +1,17 @@
 import React, { useContext } from 'react';
 import { FavoritesContext } from '../context/FavoritesContext';
+import './favpage.css';
+import Navbar from './Nav.jsx';
 
 function Favpage() {
     const { favorites } = useContext(FavoritesContext);
 
     return (
-        <div>
-            <h1>Favorites</h1>
-            <ul>
+        <>
+        <Navbar/>
+        <div className='headingfav'>
+            <h1 >Favorites</h1>
+            <ul className='ulgrid'>
                 {favorites.map((item, index) => (
                     <li key={index}>
                         <img src={item.image} alt={item.name} />
@@ -22,6 +26,7 @@ function Favpage() {
                 ))}
             </ul>
         </div>
+        </>
     );
 }
 

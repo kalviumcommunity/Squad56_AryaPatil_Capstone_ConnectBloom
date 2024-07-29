@@ -1,57 +1,43 @@
-.paragraph{
-    margin-top: 180px;
-  text-align: center;
-  font-size: 2rem;
+.headingfav {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
 }
 
-.addtocart{
+.headingfav h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ulgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 90px;
+}
+
+.ulgrid li {
     display: flex;
-    margin-left: 490px;
-    margin-top: 150px;
-    border: 2px solid black;
-    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#nameofplant{
-    margin-top: 80px;
-    margin-left: 150px;
+.ulgrid img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
-#imageofcart{
-    height: 27vh;
-}
-
-#quantity{
-    font-size: 1rem;
-    position: absolute;
-    top:33vw;
-    left:53vw;
-}
-
-.shoopingcart{
-    margin-top: 40px;
-}
-#addbutton{
-    position: absolute;
-    top:35vw;
-    left:53vw;
-    width: 7vw;
-    /* display: flex; */
-}
-#removebutton{
-    position: absolute;
-    top:35vw;
-    left:60vw;
-    width: 7vw;
-    padding-left: 20px;
-
-}
-
-.buttonsforcart{
-  padding-left: 20px;
-}
-
-.cartbuttonsclass{
-    display: flex;
-    justify-content: space-around;
+.ulgrid p {
+    margin: 5px 0;
+    text-align: center;
 }

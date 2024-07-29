@@ -60,28 +60,31 @@ function UserLoginPage({ onClose }) {
                 <h2 id='Login'>Login</h2>
                 {loginError && <p className="error-message">Incorrect login credentials. Please try again.</p>}
                 <form onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="username">Username</label>
-                        <input
+                  <div className='content'>
+
+                    <div className='inp'>
+                        <label htmlFor="username">Username
+                        <input 
                             placeholder='Enter your username'
                             type="text"
                             id="username"
                             value={username}
                             onChange={handleUsernameChange}
                             required
-                        />
+                        /></label>
                     </div>
-                    <div>
-                        <label htmlFor="password">Password</label>
+                    <div className='inp'>
+                        <label htmlFor="password">Password
                         <input
                             placeholder='Enter your Password'
                             type="password"
-                            id="password"
+                            // id="password"
                             value={password}
                             onChange={handlePasswordChange}
                             required
-                        />
+                        /></label>
                     </div>
+                  </div>
                     <button id='login-submit-button' type="submit">Submit</button>
                 </form>
             </div>
