@@ -17,6 +17,7 @@ function Homepage() {
     const [selectedLocation, setSelectedLocation] = useState(localStorage.getItem('selectedLocation') || 'No location selected');
     const [cart, setCart] = useState([]);
     const { favorites, addToFavorites } = useContext(FavoritesContext);
+    const [sales, setSales] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -86,6 +87,8 @@ function Homepage() {
                         <p className="name"><b>Type: </b> {category.category}</p>
                         <p className="name"><b>City: </b> {category.location}</p>
                         <p className="name"><b>Price: </b> {category.price}</p>
+                        <p className="name"><b>Contact: </b> {category.contact}</p> {/* Display contact number */}
+                        <p className="name"><b>Address: </b> {category.address}</p>
                         <button className="favbutton" onClick={() => handleAddToFavorites(category)}>Fav</button>
                     </ul>
                 ))}
