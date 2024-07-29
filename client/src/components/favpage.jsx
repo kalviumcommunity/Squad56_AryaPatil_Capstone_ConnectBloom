@@ -16,6 +16,8 @@ function Favpage() {
                         <p>{item.category}</p>
                         <p>{item.location}</p>
                         <p>{item.price}</p>
+                        <p>{item.contact}</p>
+                        <p>{item.address}</p>
                     </li>
                 ))}
             </ul>
