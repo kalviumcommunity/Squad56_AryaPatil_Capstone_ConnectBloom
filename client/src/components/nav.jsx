@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import './Nav.css';
+import './nav.css';
 import Logo from '../assets/newlogo.png';
 import { FavoritesContext } from '../context/FavoritesContext';
 

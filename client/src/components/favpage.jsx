@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { FavoritesContext } from '../context/FavoritesContext';
-import './favpage.css';
+import { FavoritesContext } from '../context/FavoritesContext.jsx';
+import './Favpage.css';
 import Navbar from './Nav.jsx';
 
 function Favpage() {

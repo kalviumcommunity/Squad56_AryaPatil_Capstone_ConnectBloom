@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sale from './components/Sale.jsx';
-import Homepage from './components/Homepage.jsx';
+import Homepage from './components/homepage.jsx';
 import UserLoginPage from './components/Userloginpage.jsx';
 import Navbar from './components/Nav.jsx'; 
-import Favpage from './components/favpage.jsx';
+import Favpage from './components/Favpage.jsx';
 import Signup from './components/Signup.jsx';
 import { FavoritesProvider } from './context/FavoritesContext.jsx';
 
