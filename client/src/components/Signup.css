@@ -1,0 +1,92 @@
+.signupdiv{
+    margin-top: 150px;
+    border: 5px solid rgb(14, 141, 0);
+    height: 80vh;
+    width: 60vw;
+    margin-left: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+} 
+.signupdiv:hover{
+  background-color: rgb(97, 248, 97);
+  transform: scale(1.05);
+}
+
+/* .main-sign{
+ background-color: rgb(193, 248, 193);
+} */
+
+/* .main-sign:hover{
+    background-color: greenyellow;
+} */
+
+#headingsign{
+    margin-left: 370px;
+    margin-top: 50px;
+}
+
+form{
+    margin-top: 30px;
+    /* margin-right: 190px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+}
+
+#signupbtn{
+    width: 7vw;
+    height: 5vh;
+    margin-left: 400px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(118, 118, 226);
+    border-radius: 5px;
+}  
+
+#signupbtn:hover {
+    background-color: darkblue;
+}
+
+.namediv{
+    margin-left: 180px;
+    /* margin-left: 130px; */
+
+}
+#name{
+    margin-left: 50px;
+
+}
+
+.emaildiv{
+    margin-left: 180px;
+    
+    
+}
+#email{
+    height: 7vh;
+    margin-left: 50px;
+    width:26vw ;
+}
+
+.passworddiv{
+    margin-left: 180px;
+    margin-top: 20px;
+    /* justify-content: center; */
+    /* padding-left: 20px; */
+}
+#password{
+    margin-left: 100px;
+     /* gap: 60px; */
+}
+
+.confirmpassworddiv{
+    margin-left: 180px;
+    padding-right: 70px;
+}
+.inpp{
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 700px;
+}

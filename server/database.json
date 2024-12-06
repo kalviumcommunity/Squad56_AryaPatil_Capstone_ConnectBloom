@@ -1,0 +1,439 @@
+[
+    {
+      
+      "name": "Snake Plant",
+      "image": "https://us.123rf.com/450wm/anarisyet/anarisyet2304/anarisyet230400010/201945992-illustration-potted-plant-for-the-interior-isolated.jpg?ver=6",
+      "benefits": [
+        "Filter indoor air",
+        "Remove toxic pollutants",
+        "May help boost mental health",
+        "Easy to care",
+        "Effective against allergies"
+      ],
+      "category": "indoor"
+    },
+    {
+   
+      "name": "Spider Plant",
+      "image": "https://media.istockphoto.com/id/1398699388/vector/chlorophytum-or-spider-plant-in-hanging-flower-pot.jpg?s=612x612&w=0&k=20&c=x_dQQ7t2fmxHX5YDf917BV4HK6P8regXW9xxJCC3Fas=",
+      "benefits": [
+        "Hard to kill",
+        "Purifies air",
+        "Safe for pets",
+        "Speeds recovery of patients",
+        "Increases humidity"
+      ],
+      "category": "hanging"
+    },
+    {
+  
+      "name": "Peace Lily",
+      "image": "https://media.istockphoto.com/id/1397075024/vector/peace-lily-or-spathiphyllum-plant-decorative-indoor-house-plant-in-flower-pot.jpg?s=612x612&w=0&k=20&c=0Q9hH365UzDMef0VBG01TLdF5eeUA4axU-wg-nFLBmY=",
+      "benefits": [
+        "Air purifier",
+        "Low maintenance plant",
+        "Prevents mold formation",
+        "Improves sleep quality",
+        "Blooms all year round"
+      ],
+      "category": "indoor"
+    },
+    {
+
+        "name": "ZZ Plant",
+      "image": "https://media.istockphoto.com/id/1340396201/vector/simplicity-zanzibar-gem-plant-simplicity-freehand-drawing-flat-design.jpg?s=612x612&w=0&k=20&c=LAtSCt3Lzlwi9QgGw662s8hpcJcJIqEdCPS9JiaHWXY=",
+      "benefits": [
+        "Eliminates pollutants",
+        "Improves cognitive function",
+        "Adaptable nature",
+        "Medicinal properties",
+        "A Fortune Tree"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Pothos",
+      "image": "https://ih1.redbubble.net/image.1482651328.5994/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+      "benefits": [
+        "Air purification",
+        "Can be grown in water too",
+        "Aesthetic versatility",
+        "Easy to propagate",
+        "Spiritual meaning"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "Rubber Plant",
+      "image": "https://media.istockphoto.com/id/1211670395/vector/rubber-tree-houseplant.jpg?s=612x612&w=0&k=20&c=T3V-cidvOsuRw-8KqEydjJ2PbIkukQbKT-IuikLrP8s=",
+      "benefits": [
+        "Air purification",
+        "Increased humidity",
+        "Enhanced concentration",
+        "Stress relief",
+        "Better sleep"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Fiddle Leaf Fig",
+      "image": "https://static.vecteezy.com/system/resources/previews/003/099/119/non_2x/doodle-freehand-sketch-drawing-of-fiddle-leaf-fig-tree-free-vector.jpg",
+      "benefits": [
+        "Air purification",
+        "Aesthetic appeal",
+        "Biophilic benefits",
+        "Easy to care for",
+        "Versatile décor"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Monstera",
+      "image": "https://cdn.pixabay.com/photo/2022/08/21/19/08/monstera-7401870_1280.jpg",
+      "benefits": [
+        "Air purification",
+        "Humidity regulation",
+        "Visual appeal",
+        "Easy care",
+        "Versatile décor"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Aloe Vera",
+      "image": "https://img.freepik.com/premium-vector/vector-isolated-cartoon-illustration-home-potted-succulent-aloe-vera-plant_364586-514.jpg",
+      "benefits": [
+        "Skin care",
+        "Hair health",
+        "Digestive support",
+        "Immune system boost",
+        "Wound healing"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Chinese Evergreen",
+      "image": "https://img.freepik.com/premium-vector/elegant-serenity-chinese-evergreen-indoor-plant_967920-5.jpg",
+      "benefits": [
+        "Air purification",
+        "Low maintenance",
+        "Adaptability",
+        "Improved well-being",
+        "Aesthetic appeal"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Succulents",
+      "image": "https://png.pngtree.com/png-vector/20230814/ourmid/pngtree-colorful-succulents-vector-sticker-clipart-png-image_6865611.png",
+      "benefits": [
+        "Low maintenance",
+        "Air purification",
+        "Stress reduction",
+        "Versatility",
+        "Drought tolerance"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Parlor Palm",
+      "image": "https://img.freepik.com/premium-photo/watercolor-parlor-palm-with-copper-wire-terracotta-pots-adorned-with-digital-illustration-art_655090-623823.jpg",
+      "benefits": [
+        "Air purification",
+        "Humidity regulation",
+        "Low maintenance",
+        "Non-toxic",
+        "Aesthetic enhancement"
+      ],
+      "category": "indoor"
+    },
+    {
+      "name": "Magnolia",
+      "image": "https://thumbs.dreamstime.com/z/magnolia-flower-isolated-vintage-painting-white-drawing-abstract-generative-ai-illustration-imitation-luxurious-spring-268208457.jpg",
+      "benefits": [
+        "Ornamental beauty",
+        "Low maintenance",
+        "Wildlife attraction",
+        "Aromatic fragrance",
+        "Medicinal uses"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Cherry Blossom",
+      "image": "https://img.pixers.pics/pho_wat(s3:700/FO/21/05/04/72/700_FO21050472_230d0e64488e563ce9748aa04996257a.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/posters-blossom-cherry-tree.jpg.jpg",
+      "benefits": [
+        "Aesthetic beauty",
+        "Cultural significance",
+        "Ecological importance",
+        "Therapeutic value",
+        "Tourism"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Dogwood",
+      "image": "https://img.freepik.com/premium-vector/hand-drawn-flat-color-dogwood-tree-illustration_614983-6778.jpg",
+      "benefits": [
+        "Ornamental beauty",
+        "Wildlife habitat",
+        "Erosion control",
+        "Medicinal properties",
+        "Ecological restoration"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Maple",
+      "image": "https://media.istockphoto.com/id/1029214682/vector/autumn.jpg?s=612x612&w=0&k=20&c=cNwW00nSq1_RjTUYd2F2NGGJRWixk7eSi55aJ6Oz2ww=",
+      "benefits": [
+        "Maple syrup production",
+        "Medicinal properties",
+        "Environmental benefits",
+        "Wood products",
+        "Aesthetic value"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Rhododendron",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTG6RK1JGDeC10ncbG6_6Cv5Lq7AfaLdIeW3nrI6AyOUwd9AVnk3r-TA6kMJzoP8GqPYs&usqp=CAU",
+      "benefits": [
+        "Aesthetic appeal",
+        "Air purification",
+        "Habitat for wildlife",
+        "Erosion control",
+        "Medicinal uses"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Hydrangea",
+      "image": "https://static.vecteezy.com/system/resources/previews/008/823/169/non_2x/hydrangea-flower-cartoon-colored-clipart-free-vector.jpg",
+      "benefits": [
+        "Beautiful blooms",
+        "Versatile landscape use",
+        "Long blooming period",
+        "Attracts pollinators",
+        "Low maintenance"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Camellia",
+      "image": "https://static.vecteezy.com/system/resources/previews/010/171/978/non_2x/red-camellia-flower-hand-drawn-illustration-png.png",
+      "benefits": [
+        "Ornamental beauty",
+        "Air purification",
+        "Medicinal properties",
+        "Wildlife habitat",
+        "Cultural significance"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Lilac",
+      "image": "https://thumbs.dreamstime.com/z/blossom-lilac-8996394.jpg",
+      "benefits": [
+        "Aesthetic appeal",
+        "Fragrance",
+        "Medicinal properties",
+        "Wildlife attraction",
+        "Adaptability"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Petunia",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmKdK158LmLDWQuk5IxUQHgCCkaTQaNIhnzTfc-X-KuJG1-Imul75OXgnIRGi8A9M-PWQ&usqp=CAU",
+      "benefits": [
+        "Variety of colors and patterns",
+        "Long blooming period",
+        "Low maintenance",
+        "Attracts pollinators",
+        "Versatile planting options"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Marigold",
+      "image": "https://www.shutterstock.com/image-vector/fresh-marigold-flowers-isolated-on-260nw-2324679493.jpg",
+      "benefits": [
+        "Natural pest control",
+        "Attractive flowers",
+        "Medicinal uses",
+        "Companion planting",
+        "Edible and culinary uses"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Sunflower",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/012/189/457/small_2x/sunflower-plant-on-white-background-vector.jpg",
+      "benefits": [
+        "Nutritional value",
+        "Edible oil production",
+        "Agricultural crop",
+        "Pollinator attraction",
+        "Aesthetic and ornamental value"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Zinnia",
+      "image": "https://www.clipartkey.com/mpngs/m/282-2823418_zinnia-flowers-pink-zinnia-png.png",
+      "benefits": [
+        "Easy to grow",
+        "Attracts pollinators",
+        "Long blooming period",
+        "Versatility in use",
+        "Variety of colors and sizes"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Lavender",
+      "image": "https://cdn.pixabay.com/photo/2023/06/29/18/16/lavender-8096889_1280.jpg",
+      "benefits": [
+        "Aromatherapy",
+        "Skin care",
+        "Pain relief",
+        "Natural insect repellent",
+        "Culinary uses"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Coneflower",
+      "image": "https://images.fineartamerica.com/images-medium-large-5/purple-coneflower-echinacea-purpurea-janet-zeh.jpg",
+      "benefits": [
+        "Immune support",
+        "Anti-inflammatory properties",
+        "Antioxidant content",
+        "Wound healing",
+        "Supports respiratory health"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Hosta",
+      "image": "https://images.saatchiart.com/saatchi/1127288/art/5582665/4652475-UBUYQEFZ-7.jpg",
+      "benefits": [
+        "Versatility in landscaping",
+        "Low maintenance",
+        "Attractive foliage",
+        "Adaptability to shade",
+        "Erosion control"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "Peony",
+      "image": "https://2.bp.blogspot.com/-c9aFeMTJe2k/Wu-GZC-d0GI/AAAAAAAAIHA/Ju98UYroNQUpaZQq851mPk4cUPh-VUDpgCLcBGAs/s1600/20180506%2BPeony%2BBotanical%2BArt%2BNote%2BCard%2Bfrom%2BColonial%2BWilliamsburg.jpg",
+      "benefits": [
+        "Ornamental beauty",
+        "Fragrance",
+        "Medicinal properties",
+        "Longevity",
+        "Attracts pollinators"
+      ],
+      "category": "flowering"
+    },
+    {
+      "name": "String of Pearls",
+      "image": "https://media.istockphoto.com/id/1393432416/vector/pearl-of-strings-houseplant-in-hanging-flower-pot.jpg?s=612x612&w=0&k=20&c=Ib_x_-669FNKMpHSZbkj7AQTcAvxnqG60DCRZiucHwU=",
+      "benefits": [
+        "Low maintenance",
+        "Air purification",
+        "Decorative appeal",
+        "Stress reduction",
+        "Propagation"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "English Ivy",
+      "image": "https://img.freepik.com/premium-vector/potted-hanging-english-ivy-plant-illustration_799627-130.jpg",
+      "benefits": [
+        "Air purification",
+        "Reduced mold growth",
+        "Sound absorption",
+        "Aesthetic enhancement",
+        "Low maintenance"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "Lipstick Plant",
+      "image": "https://hortipm.tamu.edu/syllabi/302/new/graphics/A/aeschynanthus.gif",
+      "benefits": [
+        "Aesthetic appeal",
+        "Air purification",
+        "Low maintenance",
+        "Natural décor",
+        "Stress reduction"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "Boston Fern",
+      "image": "https://media.istockphoto.com/id/1249374645/vector/vector-flat-illustration-of-nephrolepis-exaltata-home-plant-isolated.jpg?s=612x612&w=0&k=20&c=Y89g_iMJG9vjBFMjC-zbPVhj0J60RpwOdbZTBuOdoos=",
+      "benefits": [
+        "Air purification",
+        "Humidity regulation",
+        "Aesthetic appeal",
+        "Stress reduction",
+        "Easy care"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "Trailing Jade",
+      "image": "https://img.freepik.com/premium-photo/watercolor-jade-plant-with-hanging-pots-bamboo-sticks-succulent-digital-illustration-art_655090-940917.jpg",
+      "benefits": [
+        "Low maintenance",
+        "Air purification",
+        "Attractive appearance",
+        "Versatility in décor",
+        "Easy propagation"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "Burro's Tail",
+      "image": "https://assets-global.website-files.com/5f555a41822a92ae93ebb80d/61f0a41ed6de52f0481cb308_burros%20tail-export.png",
+      "benefits": [
+        "Low maintenance",
+        "Drought tolerance",
+        "Air purification",
+        "Versatile décor",
+        "Propagation"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "Heartleaf Philodendron",
+      "image": "https://img.freepik.com/premium-photo/watercolor-heartleaf-philodendron-hanging-pots-with-fishing-line-digital-illustration-art_655090-939330.jpg",
+      "benefits": [
+        "Air purification",
+        "Easy to care for",
+        "Versatile décor",
+        "Stress reduction",
+        "Propagation"
+      ],
+      "category": "hanging"
+    },
+    {
+      "name": "Wandering Jew",
+      "image": "https://urbanindoorgarden.in/wp-content/uploads/2020/01/Tradescantia-zebrina-Wandering-Jew-Houseplant_2000x-800x800-1-300x300.jpg",
+      "benefits": [
+        "Air purification",
+        "Aesthetic appeal",
+        "Low maintenance",
+        "Propagation",
+        "Stress reduction"
+      ],
+      "category": "hanging"
+    }
+  ]
+  
