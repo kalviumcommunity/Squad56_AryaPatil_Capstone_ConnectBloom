@@ -1,7 +1,15 @@
-<<<<<<< HEAD
+
 /node_modules 
-=======
+
 /node_modules  
 .env
->>>>>>> 84603906b72a16ab4091113c3dd50b5d3711f52a
+84603906b72a16ab4091113c3dd50b5d3711f52a
+
+
+/node_modules 
+
+/node_modules  
+.env
+
+4f196d8c20c6cb4fce1a735895a19b73a143b3c7
 package-lock.json
