@@ -4,7 +4,7 @@ import './Nav.css';
 import Logo from '../assets/newlogo.png';
 import { FavoritesContext } from '../context/FavoritesContext';
 
-function Navbar({ selectedLocation, onLocationChange ,cart}) {
+function Navbar({ selectedLocation, onLocationChange }) {
     const { favorites } = useContext(FavoritesContext);
 
     return (
