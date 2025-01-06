@@ -7,6 +7,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs'); 
 const jwt = require('jsonwebtoken');
+const rateLimit = require('express-rate-limit')
 require('dotenv').config();   
 
 const port = process.env.PORT || 3000;
@@ -15,6 +16,13 @@ const saltRounds = parseInt(process.env.SALT_ROUNDS, 10);
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100, 
+  message: 'Too many requests from this IP, please try again later.'
+});
+app.use('/signup', limiter)
 
 // Database Connection
 connectToDB();
